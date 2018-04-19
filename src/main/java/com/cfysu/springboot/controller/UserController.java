@@ -21,9 +21,10 @@ public class UserController {
     @Autowired
     private UserMapperByXML userMapperByXML;
 
-    @RequestMapping("/")
+    @RequestMapping(value = "/",produces = "application/xml;charset=UTF-8")
     public List<User> index() {
-        //return userJpaRepository.findAll();
-        return userMapperByXML.getAllUser();
+        return userJpaRepository.findFirst10ByUserName("lcj1");
+        //return userMapper.getAll();
+        //return userMapperByXML.getAllUser();
     }
 }
