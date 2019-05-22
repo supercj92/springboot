@@ -14,8 +14,8 @@ import java.util.Enumeration;
 import java.util.List;
 
 @RestController
-@RequestMapping("/test")
-public class UserController {
+@RequestMapping("/rest")
+public class UserRestController {
 
     @Autowired
     private UserJpaRepository userJpaRepository;
