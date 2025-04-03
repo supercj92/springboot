@@ -1,23 +1,23 @@
 package com.cfysu.springboot.domain;
 
 
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.Id;
+//import javax.persistence.Column;
+//import javax.persistence.Entity;
+//import javax.persistence.GeneratedValue;
+//import javax.persistence.Id;
 import java.io.Serializable;
 
-@Entity
+//@Entity
 public class User implements Serializable{
 
-    @Id
-    @GeneratedValue
+    //@Id
+    //@GeneratedValue
     private Integer id;
 
-    @Column(nullable = false)
+    //@Column(nullable = false)
     private String userName;
 
-    @Column
+    //@Column
     private String pwd;
 
     public User(){}
